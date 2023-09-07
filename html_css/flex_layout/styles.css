@@ -1,0 +1,43 @@
+body,
+html,
+#main {
+    height: 100%;
+}
+
+.header,
+.nav,
+.footer,
+.content,
+.sidebar {
+    padding: 20px;
+    border: 3px solid #000000;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    height: 100px;
+}
+
+.flex-container {
+    flex: 1 1;
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    flex: 70%;
+}
+
+.sidebar {
+    flex: auto;
+}
