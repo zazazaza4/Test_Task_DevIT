@@ -1,0 +1,51 @@
+body,
+html,
+#main {
+    height: 100%;
+}
+
+.header,
+.nav,
+.footer,
+.content,
+.sidebar {
+    padding: 20px;
+    border: 3px solid #000000;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: navigation;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+#main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 70% auto;
+    grid-template-rows: 1.5fr 1fr 4fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "navigation navigation navigation"
+        "content content sidebar"
+        "footer footer footer";
+}
